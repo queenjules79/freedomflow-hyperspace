@@ -57,13 +57,19 @@
 										<li> Is your body being loud?</li>
 										<li> Do you prefer to meet in person, without a digital interface?</li>
 										</ul>
-										<p>
-											Choose an in-person session at Trenarren House.
-										</p>
-										<p>
-											Trenarren House just outside of St Austell is a tranquil venue in which to meet and unwind,
-											allowing the session to include somatic knowing and protocols that reset and restore the 
-											immune system.
+										<button class="reveal-btn button primary">Yes!</button>
+										<div class="reveal-card">
+											<p>
+												Choose an in-person session at Trenarren House.
+											</p>
+											<p>
+												Trenarren House just outside of St Austell is a tranquil venue in which to meet and unwind,
+												allowing the session to include somatic knowing and protocols that reset and restore the 
+												immune system.
+											</p>
+										</div>
+										<p> 
+											and/or...
 										</p>
 										<ul>
 										<li> Is your mind calling for attention - with anxieties, worries or ruminations?</li>
@@ -72,14 +78,23 @@
 										<li> Do you have an inkling of capacity for confidence that you want to free?</li>
 										<li> Perhaps burned feeling burned out, scared of change and asking what comes next?</li>
 										</ul>
-										<p>
-											If you live too distant for an in person session, choose on-line sessions via Zoom.
-										</p>
+										<button class="reveal-btn button primary">Yes!</button>
+										<div class="reveal-card">
+											<p>
+												If you live too distant for an in person session, choose on-line sessions via Zoom.
+											</p>
+											<p>
+												Online sessions are great regardless of timezone.  They allow greater flexibility and for you
+												to be in the comfort of your own chosen environment.  It is remarkable how the energy shifts and moves
+												regardless of the physical distance.
+
+											</p>
+										</div>
 
 										<header class="major">
 											<h2>What else is possible?</h2>
 										</header>
-										<h2>Let me help</h2>
+										<h2>Let's open the door</h2>
 										<ul class="actions special">
 											<li><a href="https://calendly.com/juliannefraser68" class="button primary"><strong>Book Now!</strong></a></li>
 										</ul>
@@ -330,6 +345,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				$(document).ready(function() {
+					$('.reveal-btn').click(function() {
+						$(this).next('.reveal-card').slideToggle();
+					});
+				});
+			</script>
 
 	</body>
 </html>
